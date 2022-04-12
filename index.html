@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <title>Bienvenue sur Netflix</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Une description de la page" />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <script src="./js/main.js" defer></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    </head>
+    <body>
+        <header id="header">
+            <div class="bg"></div>
+            <img class="logo-red" src="./images/logo-red.svg" alt="logo" />
+            
+            <div class="title-boutons">
+                <div class="title">
+                    <p class="top-num-active">01</p>
+                    <p class="top-title-active">Perdus dans l'espace</p>
+                </div>
+
+                <div class="boutons">
+                    <a href="#" class="btn-infos btn">
+                        <img src="./images/icon-infos.svg" alt="Icone infos" />
+                        <span>Plus d'infos</span>
+                    </a>
+                    <a href="#" class="btn-bande-annonce btn">
+                        <img src="./images/icon-play.svg" alt="Icone bande annonce" />
+                        <span>Bande annonce</span>
+                    </a>
+                </div>
+            </div>
+            <div class="block-top">
+                <div>
+                    <input type="radio" name="radio" id="radio-1" />
+                    <input type="radio" name="radio" id="radio-2" />
+                    <input type="radio" name="radio" id="radio-3" />
+                    <input type="radio" name="radio" id="radio-4" />
+                    <input type="radio" name="radio" id="radio-5" />
+                    <input type="radio" name="radio" id="radio-6" />
+                    <input type="radio" name="radio" id="radio-7" />
+                    <input type="radio" name="radio" id="radio-8" />
+                    <input type="radio" name="radio" id="radio-9" />
+                    <input type="radio" name="radio" id="radio-10" />
+
+                    <div onclick="sliderManual(1)" class="top-1 top">
+                        <p class="top-num">01</p>
+                    </div>
+                    <div onclick="sliderManual(2)" class="top-2 top">
+                        <p class="top-num">02</p>
+                    </div>
+                    <div onclick="sliderManual(3)" class="top-3 top">
+                        <p class="top-num">03</p>
+                    </div>
+                    <div onclick="sliderManual(4)" class="top-4 top">
+                        <p class="top-num">04</p>
+                    </div>
+                    <div onclick="sliderManual(5)" class="top-5 top">
+                        <p class="top-num">05</p>
+                    </div>
+                    <div onclick="sliderManual(6)" class="top-6 top">
+                        <p class="top-num">06</p>
+                    </div>
+                    <div onclick="sliderManual(7)" class="top-7 top">
+                        <p class="top-num">07</p>
+                    </div>
+                    <div onclick="sliderManual(8)" class="top-8 top">
+                        <p class="top-num">08</p>
+                    </div>
+                    <div onclick="sliderManual(9)" class="top-9 top">
+                        <p class="top-num">09</p>
+                    </div>
+                    <div onclick="sliderManual(10)" class="top-10 top">
+                        <p class="top-num">10</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="presentation">
+            <div class="sign-up-in">
+                <h1>Prêt à regarder Netflix ?</h1>
+                <div>
+                    <div class="btn-inscription">S'inscrire</div>
+                    <div class="btn-connection"><a href="connexion.html">S'identifier</a></div>
+                </div>
+                <form action="">
+                    <input type="email" name="email" id="email" placeholder="Adresse e-mail">
+                    <button type="submit">Commencer</button>
+                </form>
+            </div>
+            <div class="descriptions">
+                <img src="./images/logo-red.svg" alt="logo Netflix">
+                <div>
+                    <div class="description">
+                        <div class="netflix-1"></div>
+                        <div class="texte">
+                            <h2>Qu’est-ce que Netflix ?</h2>
+                            <p>Netflix est un service de streaming qui propose une vaste sélection de séries TV, films, animes, documentaires et autres programmes primés sur des milliers d'appareils connectés à Internet.<br>Regardez tout ce que vous voulez, quand vous voulez, sans publicité et à un tarif mensuel très attractif. Découvrez de nouveaux films et séries TV chaque semaine, il y en a pour tous les goûts !</p>
+                        </div>
+                    </div>
+                    <div class="description description-2">
+                        <div class="texte">
+                            <h2>Regardez Netflix depuis n'importe où.</h2>
+                            <p>Regardez Netflix en accès illimité sur votre smartphone, tablette, ordinateur, Smart TV, PlayStation, Xbox, Chromecast, Apple TV, lecteurs Blu-ray etc.<br>Téléchargez vos séries préférées pour les regarder hors connexion où que vous soyez.
+                            </p>
+                        </div>
+                        <div class="netflix-2"></div>
+                    </div>
+                    <div class="description">
+                        <div class="netflix-3"></div>
+                        <div class="texte">
+                            <h2>Du contenu exclusif</h2>
+                            <p>Netflix offre une programmation originale unique. Films, séries, programmes spéciaux et plus encore... sur mesure, rien que pour vous.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="forfaits">
+            <div class="nos-forfaits">
+                <h2>Nos forfaits</h2>
+            </div>
+
+             <div class="les-forfaits">
+                 <!-- Forfait Essentiel -->
+                <div class="forfait forfait-1">
+                    <div class="title-forfait title-forfait-1">
+                        <h3>Essentiel</h3>
+                    </div>
+                    <div class="details">
+                        <p class="price">8,99€</p>
+                        <p><img src="./images/icon-check.svg" alt="icon check">1 écran</p>
+                        <p><img src="./images/icon-check.svg" alt="icon check">Bonne qualité vidéo en SD (480p)</p>
+                    </div>
+                    <div class="souscrire">
+                        <a href="" class="btn-souscrire btn"><span>Souscrire</span></a>
+                    </div>
+                </div>
+
+                <!-- Forfait Standard -->
+                <div class="forfait forfait-2">
+                    <div class="title-forfait title-forfait-2">
+                        <h3>Standard</h3>
+                    </div>
+                    <div class="details">
+                        <p class="price">13,49€</p>
+                        <p><img src="./images/icon-check.svg" alt="icon check">2 écrans</p>
+                        <p><img src="./images/icon-check.svg" alt="icon check">Excellente qualité vidéo en Full HD (1080p)</p>
+                    </div>
+                    <div class="souscrire">
+                        <a href="" class="btn-souscrire btn"><span>Souscrire</span></a>
+                    </div>
+                </div>
+
+                <!-- Forfait Premium -->
+                <div class="forfait forfait-3">
+                    <div class="title-forfait title-forfait-3">
+                        <h3>Premium</h3>
+                    </div>
+                    <div class="details">
+                        <p class="price">17,99€</p>
+                        <p><img src="./images/icon-check.svg" alt="icon check">4 écrans</p>
+                        <p><img src="./images/icon-check.svg" alt="icon check">Qualité vidéo optimale en Ultra HD (4K) et HDR</p>
+                    </div>
+                    <div class="souscrire">
+                        <a href="" class="btn-souscrire btn"><span>Souscrire</span></a>
+                    </div>
+                </div>
+             </div>
+        </section>
+        <footer>
+            <div class="part1">
+                <h4>Des questions ?</h4>
+                <p>Appelez le (+33) 0805-543-063</p>
+            </div>
+            <div class="grid">
+                <div class="part2">
+                    <p>FAQ</p>
+                    <p>Centre d'aide</p>
+                    <p>Nous contacter</p>
+                </div>
+                <div class="part3">
+                    <p>Compte</p>
+                    <p>Seulement sur Netflix</p>
+                    <p>Recrutement</p>
+                </div>
+                <div class="part4">
+                    <p>Mentions légales</p>
+                    <p>Confidentialité</p>
+                </div>
+                <div class="part5">
+                    <p>Préférences de cookies</p>
+                    <p>Conditions d'utilisation</p>
+                </div>
+                <div class="part6">
+                    <select name="langues" id="langues" class="btn"><i class="fas fa-globe"></i>
+                        <option value="FR">Français</option>
+                    </select>
+                    <p>Netflix France</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
